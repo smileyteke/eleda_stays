@@ -1,0 +1,76 @@
+/* Dashboard Page Styles */
+
+.dashboard .dashboard-header {
+  margin-bottom: 32px;
+}
+
+.dashboard .dashboard-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+  color: #2c3e50;
+}
+
+/* Stat Cards */
+.dashboard .stat-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+}
+
+.dashboard .stat-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.dashboard .stat-content h3 {
+  font-size: 2rem;
+  margin-bottom: 4px;
+  color: #2c3e50;
+}
+
+.dashboard .stat-title {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.dashboard .stat-change {
+  font-size: 0.8rem;
+  color: #27ae60;
+}
+
+/* Activities and Tasks */
+.dashboard .activities-list,
+.dashboard .tasks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dashboard .activity-item,
+.dashboard .task-item {
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.dashboard .activity-type,
+.dashboard .task-description {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 4px;
+}
+
+.dashboard .activity-time,
+.dashboard .task-due {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}

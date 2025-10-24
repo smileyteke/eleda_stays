@@ -1,0 +1,159 @@
+/* Home Page Styles */
+
+/* Hero Section - Separate from background */
+.home .hero {
+  background: rgb(238, 204, 209);
+  color: black;
+  padding: 0;
+  text-align: center;
+  margin: 20px;
+  position: relative;
+  z-index: 3;
+  /* Add some visual separation */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home .hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.home .hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 32px;
+  opacity: 0.9;
+}
+
+.home .hero-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Background section styles */
+.home .page-background {
+  min-height: 50vh;
+  position: relative;
+}
+
+.home .page-content {
+  padding: 40px 20px;
+}
+
+/* Property Cards */
+.home .property-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.home .property-card:hover {
+  transform: translateY(-4px);
+}
+
+.home .property-image {
+  height: 200px;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .property-info {
+  padding: 24px;
+}
+
+.home .property-info h3 {
+  margin-bottom: 12px;
+  color: #2c3e50;
+}
+
+.home .property-price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #27ae60;
+  margin-top: 16px;
+}
+
+/* Feature Cards */
+.home .feature-card {
+  background: white;
+  padding: 32px 24px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home .feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.home .feature-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.home .feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  color: #2c3e50;
+}
+
+/* Testimonial Cards */
+.home .testimonial-card {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home .testimonial-content {
+  margin-bottom: 24px;
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.home .testimonial-author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* CTA Section */
+.home .cta {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 40px 0;
+}
+
+.home .cta-content h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.home .cta-content p {
+  font-size: 1.1rem;
+  margin-bottom: 32px;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .home .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .home .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+}

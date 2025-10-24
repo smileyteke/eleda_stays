@@ -1,0 +1,47 @@
+/* About Page Styles */
+
+/* Hero Section - Separate from background */
+.about .hero {
+  background: rgb(238, 204, 209);
+  color: black;
+  padding: 0;
+  text-align: center;
+  margin: 20px;
+  position: relative;
+  z-index: 3;
+  /* Add some visual separation */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about .hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+/* Background section styles */
+.about .page-background {
+  min-height: 60vh;
+  position: relative;
+}
+
+.about .page-content {
+  padding: 40px 20px;
+}
+
+/* Story Content */
+.about .story-content {
+  padding-right: 32px;
+}
+
+.about .story-content p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about .story-content {
+    padding-right: 0;
+    margin-bottom: 32px;
+  }
+}

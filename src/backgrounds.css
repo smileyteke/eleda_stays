@@ -1,0 +1,65 @@
+/* Background Image Configuration for Eleda Stays */
+
+/*
+To replace background images for each page:
+
+1. Save your images in the src/images/ folder (for CSS references)
+   OR in the public/images/ folder (for inline styles in components)
+2. For CSS files (like App.css), use relative paths: url('./images/your-image.jpg')
+3. For inline styles in React components, use: '/images/your-image.jpg'
+4. Remove spaces from filenames to avoid URL encoding issues
+
+Example for CSS:
+.home-background {
+  background-image: url('./images/home-background.jpg');
+}
+*/
+
+/* HOME PAGE BACKGROUND */
+.home-background {
+  /* Currently using: src/images/website-pic-1.jpg */
+  background-image: url('./images/website-pic-1.jpg');
+  /* Fallback color if image doesn't load */
+  background-color: #2c3e50;
+}
+
+/* ABOUT PAGE BACKGROUND */
+.about-background {
+  /* Replace with: url('/images/about-background.jpg') */
+  background-image: url('./images/About_us.png');
+}
+
+/* SERVICES PAGE BACKGROUND */
+.services-background {
+  /* Replace with: url('/images/services-background.jpg') */
+  background-image: url('./images/services-background.jpg');
+}
+
+/* CONTACT PAGE BACKGROUND */
+.contact-background {
+  /* Replace with: url('/images/contact-background.jpg') */
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23e74c3c" width="1200" height="800"/><path fill="%232c3e50" d="M0,800 Q300,600 600,700 T1200,600 L1200,800 Z" opacity="0.5"/><path fill="%233498db" d="M0,700 Q400,500 800,600 T1200,500 L1200,800 Z" opacity="0.3"/></svg>');
+}
+
+/*
+Additional Background Options:
+
+1. Gradient overlays (adjust the rgba values in the ::before pseudo-element):
+   - Light overlay: rgba(255, 255, 255, 0.3)
+   - Dark overlay: rgba(0, 0, 0, 0.6)
+   - Colored overlay: rgba(52, 152, 219, 0.4)
+
+2. Background positioning:
+   - background-position: center top;
+   - background-position: center center;
+   - background-position: center bottom;
+
+3. Background sizing:
+   - background-size: cover; (fills entire container)
+   - background-size: contain; (fits entire image)
+   - background-size: 100% 100%; (stretches to fit)
+
+4. Background attachment:
+   - background-attachment: fixed; (parallax effect)
+   - background-attachment: scroll; (moves with content)
+*/

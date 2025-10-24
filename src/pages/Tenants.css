@@ -1,0 +1,51 @@
+/* Tenants Page Styles */
+
+.tenants .page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.tenants .filters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.tenants .filter-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+.tenants .table-responsive {
+  overflow-x: auto;
+}
+
+.tenants .action-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tenants .no-results {
+  text-align: center;
+  padding: 32px;
+  color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+  .tenants .filters {
+    flex-direction: column;
+  }
+  
+  .tenants .table {
+    font-size: 14px;
+  }
+  
+  .tenants .table th,
+  .tenants .table td {
+    padding: 8px;
+  }
+}

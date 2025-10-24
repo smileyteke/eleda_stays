@@ -1,0 +1,78 @@
+/* Properties Page Styles */
+
+.properties .page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.properties .filters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.properties .filter-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+.properties .properties-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.properties .property-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.properties .property-card:hover {
+  transform: translateY(-4px);
+}
+
+.properties .property-image {
+  height: 200px;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.properties .property-info {
+  padding: 24px;
+}
+
+.properties .property-info h3 {
+  margin-bottom: 12px;
+  color: #2c3e50;
+}
+
+.properties .property-price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #27ae60;
+  margin-top: 16px;
+}
+
+.properties .action-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .properties .filters {
+    flex-direction: column;
+  }
+  
+  .properties .properties-grid {
+    grid-template-columns: 1fr;
+  }
+}
